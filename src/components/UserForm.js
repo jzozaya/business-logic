@@ -9,7 +9,7 @@ import axios from "axios";
 
 export const UserForm = () => {
 
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(2);
   const [formData, setFormData] = useState({
     serviceArea: '',
     dropOff: '',

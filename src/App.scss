@@ -7,7 +7,7 @@ $bgInput: #F4F5F7;
 body{
   margin: 0;
   padding: 0;
-  background-color: #2b2b2b;
+  background-color: $white;
 }
 
 *, *:before, *:after{
@@ -323,15 +323,16 @@ button{
     }
     .iconEditTime{
       position: relative;
-      width: 2.3rem;
-      height: 2.3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       border-radius: .6rem;
       border: 1px solid $purple;
       margin-left: 1rem;
       margin-top: .25rem;
-      background-image: url('./images/edit-time-icon.png');
-      background-size: 119%;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI2YyM2ExMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMS40MzggMTYuODcybC0xLjQzOCA3LjEyOCA3LjEyNy0xLjQzOCAxMi42NDItMTIuNjQtNS42OS01LjY5LTEyLjY0MSAxMi42NHptMi4yNzEgMi4yNTNsLS44NS0uODQ5IDExLjE0MS0xMS4xMjUuODQ5Ljg0OS0xMS4xNCAxMS4xMjV6bTIwLjI5MS0xMy40MzZsLTIuODE3IDIuODE5LTUuNjktNS42OTEgMi44MTYtMi44MTcgNS42OTEgNS42ODl6Ii8+PC9zdmc+');
+      background-size: 60%;
       background-position: center;
+      background-repeat: no-repeat;
       cursor: pointer;
     }
   }
@@ -431,10 +432,9 @@ form{
       clear: both;
     }
     &.boldLabel{
-      font-size: 1.75rem;
+      font-size: 1.25rem;
       clear: both;
     }
-
   }
   .formControl{
     width: 100%;
@@ -537,7 +537,7 @@ form{
   }
   select{
     background-position: 97% center !important;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI2YyM2ExMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCA3LjMzbDIuODI5LTIuODMgOS4xNzUgOS4zMzkgOS4xNjctOS4zMzkgMi44MjkgMi44My0xMS45OTYgMTIuMTd6Ii8+PC9zdmc+);
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI2YyM2ExMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCA3LjMzbDIuODI5LTIuODMgOS4xNzUgOS4zMzkgOS4xNjctOS4zMzkgMi44MjkgMi44My0xMS45OTYgMTIuMTd6Ii8+PC9zdmc+');
     background-size: 20px !important;
     background-repeat: no-repeat !important;
   }
@@ -553,7 +553,11 @@ form{
     padding: 0;
     background-color: $bgInput;
     &:checked{
-      background-color: $purple;
+      background-color: $bgInput;
+      background-position: center;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI2YyM2ExMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuMjg1IDJsLTExLjI4NSAxMS41NjctNS4yODYtNS4wMTEtMy43MTQgMy43MTYgOSA4LjcyOCAxNS0xNS4yODV6Ii8+PC9zdmc+');
+      background-size: 85%;
+      background-repeat: no-repeat !important;
     }
   }
   input[type=checkbox]{
@@ -566,7 +570,11 @@ form{
     border-radius: .5rem;
     outline: none;
     &:checked{
-      background-color: $purple;
+      background-color: $bgInput;
+      background-position: center;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI2YyM2ExMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuMjg1IDJsLTExLjI4NSAxMS41NjctNS4yODYtNS4wMTEtMy43MTQgMy43MTYgOSA4LjcyOCAxNS0xNS4yODV6Ii8+PC9zdmc+');
+      background-size: 85%;
+      background-repeat: no-repeat !important;
     }
   }
   textarea{
@@ -640,6 +648,10 @@ form{
     padding: 0 10vw;
     margin: 0 auto;
     
+    label.boldLabel{
+      font-size: 1.75rem;
+    }
+    
     .formControl{
       width: 50%;
       padding: 0;
@@ -707,7 +719,6 @@ form{
         }
       }
     }
-
   }
 
   .toteBoxes{
